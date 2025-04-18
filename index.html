@@ -10,10 +10,16 @@
     <div class="container">
       <div class="calc">
         <h1>Calculadora</h1>
-        <input type="number"  id="num1" />
+
+        <input type="number" id="num1" />
         <input type="number" id="num2" />
-        <button onclick="calc()">somar</button>
-        <input type="text" readonly id="output"/>
+        <div>
+          <button onclick="calc('+')">+</button>
+          <button onclick="calc('-')">-</button>
+          <button onclick="calc('/')">/</button>
+          <button onclick="calc('*')">*</button>
+        </div>
+        <input type="text" readonly id="output" />
       </div>
       <div class="history"></div>
     </div>
